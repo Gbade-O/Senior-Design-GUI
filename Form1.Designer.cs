@@ -51,12 +51,14 @@
             this.mode1_st = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.ch1_st = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.status1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.drop1 = new System.Windows.Forms.ComboBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.drop2 = new System.Windows.Forms.ComboBox();
+            this.Apply = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.wait_measure = new System.Windows.Forms.TextBox();
             this.Run_btn = new System.Windows.Forms.Button();
@@ -75,20 +77,18 @@
             this.browse_button = new System.Windows.Forms.Button();
             this.path = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.config = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.Apply = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.drop2 = new System.Windows.Forms.ComboBox();
-            this.drop1 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog2
@@ -99,11 +99,10 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
             this.tabPage2.Controls.Add(this.panel6);
-            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(890, 991);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(888, 992);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "4Track";
             // 
@@ -126,16 +125,16 @@
             this.panel6.Controls.Add(this.mode1_st);
             this.panel6.Controls.Add(this.textBox8);
             this.panel6.Controls.Add(this.ch1_st);
-            this.panel6.Location = new System.Drawing.Point(3, 298);
+            this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(885, 701);
+            this.panel6.Size = new System.Drawing.Size(884, 996);
             this.panel6.TabIndex = 1;
             // 
             // verify
             // 
-            this.verify.Location = new System.Drawing.Point(351, 610);
+            this.verify.Location = new System.Drawing.Point(345, 909);
             this.verify.Name = "verify";
-            this.verify.Size = new System.Drawing.Size(103, 35);
+            this.verify.Size = new System.Drawing.Size(104, 35);
             this.verify.TabIndex = 24;
             this.verify.Text = "Verify";
             this.verify.UseVisualStyleBackColor = true;
@@ -160,7 +159,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox22.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Location = new System.Drawing.Point(3, 413);
+            this.textBox22.Location = new System.Drawing.Point(3, 412);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(82, 19);
             this.textBox22.TabIndex = 22;
@@ -173,7 +172,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox21.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Location = new System.Drawing.Point(3, 273);
+            this.textBox21.Location = new System.Drawing.Point(3, 272);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(82, 19);
             this.textBox21.TabIndex = 21;
@@ -182,21 +181,21 @@
             // 
             // mode4_st
             // 
-            this.mode4_st.Location = new System.Drawing.Point(481, 560);
+            this.mode4_st.Location = new System.Drawing.Point(482, 560);
             this.mode4_st.Name = "mode4_st";
             this.mode4_st.Size = new System.Drawing.Size(212, 26);
             this.mode4_st.TabIndex = 20;
             // 
             // mode3_st
             // 
-            this.mode3_st.Location = new System.Drawing.Point(481, 406);
+            this.mode3_st.Location = new System.Drawing.Point(482, 406);
             this.mode3_st.Name = "mode3_st";
             this.mode3_st.Size = new System.Drawing.Size(212, 26);
             this.mode3_st.TabIndex = 19;
             // 
             // mode2_st
             // 
-            this.mode2_st.Location = new System.Drawing.Point(481, 270);
+            this.mode2_st.Location = new System.Drawing.Point(482, 269);
             this.mode2_st.Name = "mode2_st";
             this.mode2_st.Size = new System.Drawing.Size(212, 26);
             this.mode2_st.TabIndex = 18;
@@ -210,14 +209,14 @@
             // 
             // ch3_st
             // 
-            this.ch3_st.Location = new System.Drawing.Point(132, 410);
+            this.ch3_st.Location = new System.Drawing.Point(132, 409);
             this.ch3_st.Name = "ch3_st";
             this.ch3_st.Size = new System.Drawing.Size(212, 26);
             this.ch3_st.TabIndex = 16;
             // 
             // ch2_st
             // 
-            this.ch2_st.Location = new System.Drawing.Point(132, 270);
+            this.ch2_st.Location = new System.Drawing.Point(132, 269);
             this.ch2_st.Name = "ch2_st";
             this.ch2_st.Size = new System.Drawing.Size(212, 26);
             this.ch2_st.TabIndex = 15;
@@ -250,7 +249,7 @@
             // 
             // mode1_st
             // 
-            this.mode1_st.Location = new System.Drawing.Point(481, 118);
+            this.mode1_st.Location = new System.Drawing.Point(482, 118);
             this.mode1_st.Name = "mode1_st";
             this.mode1_st.Size = new System.Drawing.Size(212, 26);
             this.mode1_st.TabIndex = 11;
@@ -261,7 +260,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(3, 121);
+            this.textBox8.Location = new System.Drawing.Point(3, 122);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(82, 19);
             this.textBox8.TabIndex = 9;
@@ -275,56 +274,6 @@
             this.ch1_st.Size = new System.Drawing.Size(212, 26);
             this.ch1_st.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.status1);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(885, 289);
-            this.panel2.TabIndex = 0;
-            // 
-            // status1
-            // 
-            this.status1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.status1.BackColor = System.Drawing.Color.White;
-            this.status1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.status1.Location = new System.Drawing.Point(299, 148);
-            this.status1.Name = "status1";
-            this.status1.Size = new System.Drawing.Size(208, 26);
-            this.status1.TabIndex = 9;
-            this.status1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(171, 150);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(82, 19);
-            this.textBox5.TabIndex = 8;
-            this.textBox5.Text = "Status: ";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(299, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 19);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "Verfify 4Track connection";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -333,12 +282,14 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(898, 1024);
+            this.tabControl1.Size = new System.Drawing.Size(896, 1025);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Controls.Add(this.textBox4);
             this.tabPage3.Controls.Add(this.wait_measure);
             this.tabPage3.Controls.Add(this.Run_btn);
@@ -360,23 +311,91 @@
             this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Controls.Add(this.config);
             this.tabPage3.Controls.Add(this.textBox14);
-            this.tabPage3.Controls.Add(this.Apply);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.drop2);
-            this.tabPage3.Controls.Add(this.drop1);
-            this.tabPage3.Controls.Add(this.textBox7);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(890, 991);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Size = new System.Drawing.Size(888, 992);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ARTA";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.drop1);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.drop2);
+            this.panel1.Controls.Add(this.Apply);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(894, 109);
+            this.panel1.TabIndex = 45;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Location = new System.Drawing.Point(58, 46);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(100, 19);
+            this.textBox7.TabIndex = 14;
+            this.textBox7.Text = "Channel";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // drop1
+            // 
+            this.drop1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.drop1.Location = new System.Drawing.Point(164, 49);
+            this.drop1.MaxDropDownItems = 4;
+            this.drop1.Name = "drop1";
+            this.drop1.Size = new System.Drawing.Size(121, 28);
+            this.drop1.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Location = new System.Drawing.Point(376, 46);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(100, 19);
+            this.textBox6.TabIndex = 17;
+            this.textBox6.Text = "Mode";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // drop2
+            // 
+            this.drop2.FormattingEnabled = true;
+            this.drop2.Items.AddRange(new object[] {
+            "Frequency Response",
+            "Impedance Response ",
+            "Impedance Calibration",
+            "Cut off"});
+            this.drop2.Location = new System.Drawing.Point(482, 43);
+            this.drop2.Name = "drop2";
+            this.drop2.Size = new System.Drawing.Size(172, 28);
+            this.drop2.TabIndex = 15;
+            // 
+            // Apply
+            // 
+            this.Apply.Location = new System.Drawing.Point(681, 40);
+            this.Apply.Name = "Apply";
+            this.Apply.Size = new System.Drawing.Size(99, 37);
+            this.Apply.TabIndex = 18;
+            this.Apply.Text = "Apply";
+            this.Apply.UseVisualStyleBackColor = true;
+            this.Apply.Click += new System.EventHandler(this.Apply_Click);
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(58, 457);
+            this.textBox4.Location = new System.Drawing.Point(57, 428);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(418, 19);
@@ -385,16 +404,16 @@
             // 
             // wait_measure
             // 
-            this.wait_measure.Location = new System.Drawing.Point(58, 482);
+            this.wait_measure.Location = new System.Drawing.Point(57, 454);
             this.wait_measure.Name = "wait_measure";
             this.wait_measure.Size = new System.Drawing.Size(100, 26);
             this.wait_measure.TabIndex = 43;
             // 
             // Run_btn
             // 
-            this.Run_btn.Location = new System.Drawing.Point(368, 933);
+            this.Run_btn.Location = new System.Drawing.Point(368, 911);
             this.Run_btn.Name = "Run_btn";
-            this.Run_btn.Size = new System.Drawing.Size(108, 33);
+            this.Run_btn.Size = new System.Drawing.Size(108, 32);
             this.Run_btn.TabIndex = 42;
             this.Run_btn.Text = "Run Arta";
             this.Run_btn.UseVisualStyleBackColor = true;
@@ -403,7 +422,7 @@
             // pir
             // 
             this.pir.AutoSize = true;
-            this.pir.Location = new System.Drawing.Point(58, 933);
+            this.pir.Location = new System.Drawing.Point(58, 876);
             this.pir.Name = "pir";
             this.pir.Size = new System.Drawing.Size(123, 24);
             this.pir.TabIndex = 41;
@@ -413,7 +432,7 @@
             // ascii
             // 
             this.ascii.AutoSize = true;
-            this.ascii.Location = new System.Drawing.Point(58, 903);
+            this.ascii.Location = new System.Drawing.Point(58, 846);
             this.ascii.Name = "ascii";
             this.ascii.Size = new System.Drawing.Size(139, 24);
             this.ascii.TabIndex = 40;
@@ -423,7 +442,7 @@
             // csv
             // 
             this.csv.AutoSize = true;
-            this.csv.Location = new System.Drawing.Point(58, 873);
+            this.csv.Location = new System.Drawing.Point(58, 816);
             this.csv.Name = "csv";
             this.csv.Size = new System.Drawing.Size(129, 24);
             this.csv.TabIndex = 39;
@@ -433,7 +452,7 @@
             // overlay
             // 
             this.overlay.AutoSize = true;
-            this.overlay.Location = new System.Drawing.Point(58, 843);
+            this.overlay.Location = new System.Drawing.Point(58, 786);
             this.overlay.Name = "overlay";
             this.overlay.Size = new System.Drawing.Size(311, 24);
             this.overlay.TabIndex = 38;
@@ -442,28 +461,28 @@
             // 
             // trials
             // 
-            this.trials.Location = new System.Drawing.Point(58, 791);
+            this.trials.Location = new System.Drawing.Point(57, 707);
             this.trials.Name = "trials";
             this.trials.Size = new System.Drawing.Size(100, 26);
             this.trials.TabIndex = 37;
             // 
             // suffix
             // 
-            this.suffix.Location = new System.Drawing.Point(58, 709);
+            this.suffix.Location = new System.Drawing.Point(57, 644);
             this.suffix.Name = "suffix";
             this.suffix.Size = new System.Drawing.Size(100, 26);
             this.suffix.TabIndex = 36;
             // 
             // wait
             // 
-            this.wait.Location = new System.Drawing.Point(58, 550);
+            this.wait.Location = new System.Drawing.Point(57, 517);
             this.wait.Name = "wait";
             this.wait.Size = new System.Drawing.Size(100, 26);
             this.wait.TabIndex = 35;
             // 
             // prefix
             // 
-            this.prefix.Location = new System.Drawing.Point(58, 627);
+            this.prefix.Location = new System.Drawing.Point(57, 580);
             this.prefix.Name = "prefix";
             this.prefix.Size = new System.Drawing.Size(100, 26);
             this.prefix.TabIndex = 34;
@@ -472,7 +491,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(58, 752);
+            this.textBox2.Location = new System.Drawing.Point(57, 680);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(375, 19);
@@ -483,7 +502,7 @@
             // 
             this.textBox9.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(58, 673);
+            this.textBox9.Location = new System.Drawing.Point(57, 617);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(375, 19);
@@ -494,7 +513,7 @@
             // 
             this.textBox10.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(58, 592);
+            this.textBox10.Location = new System.Drawing.Point(57, 554);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(375, 19);
@@ -505,7 +524,7 @@
             // 
             this.textBox11.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Location = new System.Drawing.Point(58, 514);
+            this.textBox11.Location = new System.Drawing.Point(57, 491);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(375, 19);
@@ -514,7 +533,7 @@
             // 
             // browse_button
             // 
-            this.browse_button.Location = new System.Drawing.Point(58, 390);
+            this.browse_button.Location = new System.Drawing.Point(57, 337);
             this.browse_button.Name = "browse_button";
             this.browse_button.Size = new System.Drawing.Size(75, 35);
             this.browse_button.TabIndex = 29;
@@ -524,7 +543,7 @@
             // 
             // path
             // 
-            this.path.Location = new System.Drawing.Point(58, 358);
+            this.path.Location = new System.Drawing.Point(57, 300);
             this.path.Name = "path";
             this.path.Size = new System.Drawing.Size(452, 26);
             this.path.TabIndex = 28;
@@ -533,12 +552,28 @@
             // 
             this.textBox13.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Location = new System.Drawing.Point(58, 311);
+            this.textBox13.Location = new System.Drawing.Point(58, 274);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(366, 19);
             this.textBox13.TabIndex = 27;
             this.textBox13.Text = "Please specify path to ARTA.exe";
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Location = new System.Drawing.Point(57, 142);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(366, 19);
+            this.textBox14.TabIndex = 24;
+            this.textBox14.Text = "Load previous configuration file";
             // 
             // button2
             // 
@@ -557,105 +592,39 @@
             this.config.Size = new System.Drawing.Size(452, 26);
             this.config.TabIndex = 25;
             // 
-            // textBox14
+            // button1
             // 
-            this.textBox14.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Location = new System.Drawing.Point(57, 141);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(366, 19);
-            this.textBox14.TabIndex = 24;
-            this.textBox14.Text = "Load previous configuration file";
-            // 
-            // Apply
-            // 
-            this.Apply.Location = new System.Drawing.Point(587, 51);
-            this.Apply.Name = "Apply";
-            this.Apply.Size = new System.Drawing.Size(99, 31);
-            this.Apply.TabIndex = 18;
-            this.Apply.Text = "Apply";
-            this.Apply.UseVisualStyleBackColor = true;
-            this.Apply.Click += new System.EventHandler(this.Apply_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(292, 57);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 19);
-            this.textBox6.TabIndex = 17;
-            this.textBox6.Text = "Mode";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // drop2
-            // 
-            this.drop2.FormattingEnabled = true;
-            this.drop2.Items.AddRange(new object[] {
-            "Frequency Response",
-            "Impedance Response ",
-            "Impedance Calibration",
-            "Cut off"});
-            this.drop2.Location = new System.Drawing.Point(398, 51);
-            this.drop2.Name = "drop2";
-            this.drop2.Size = new System.Drawing.Size(172, 28);
-            this.drop2.TabIndex = 15;
-            // 
-            // drop1
-            // 
-            this.drop1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.drop1.Location = new System.Drawing.Point(164, 54);
-            this.drop1.MaxDropDownItems = 4;
-            this.drop1.Name = "drop1";
-            this.drop1.Size = new System.Drawing.Size(121, 28);
-            this.drop1.TabIndex = 16;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(58, 54);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 19);
-            this.textBox7.TabIndex = 14;
-            this.textBox7.Text = "Channel";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
+            this.button1.Location = new System.Drawing.Point(164, 218);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(898, 1024);
+            this.ClientSize = new System.Drawing.Size(896, 1025);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(924, 2100);
-            this.MinimumSize = new System.Drawing.Size(924, 1018);
+            this.MaximumSize = new System.Drawing.Size(922, 2091);
+            this.MinimumSize = new System.Drawing.Size(922, 1008);
             this.Name = "Form1";
-            this.Text = "4Track";
+            this.Text = "FTMB";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -673,18 +642,11 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox ch1_st;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox status1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button browse_button;
         private System.Windows.Forms.TextBox path;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox config;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button Apply;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox drop2;
@@ -716,6 +678,13 @@
         private System.Windows.Forms.Button verify;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox wait_measure;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox config;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

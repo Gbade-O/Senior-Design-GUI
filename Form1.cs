@@ -64,7 +64,7 @@ namespace Comms
         {
             //this.WindowState = FormWindowState.Maximized;
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.MinimumSize = this.MaximumSize;
+            //this.MinimumSize = this.MaximumSize;
         }
 
         bool WinExists()
@@ -184,15 +184,7 @@ namespace Comms
 
         private void Run_btn_Click_1(object sender, EventArgs e)
         {
-            string[] config = new string[7];
-            config[0] = path.Text;
-            config[1] = wait.Text;
-            config[2] = prefix.Text;
-            config[3] = suffix.Text;
-            config[4] = trials.Text;
-            config[5] = (string)drop1.SelectedItem;
-            config[6] = (string)drop2.SelectedItem;
-            System.IO.File.WriteAllLines(@"C:\Users\Gbade\Documents\AutoIt\config.ini",config); //Write to Config files
+            
 
 
             Hide();
@@ -208,8 +200,12 @@ namespace Comms
                 if(Arta.ProcessName=="Arta")
                 {
                     autoit.WinWaitActive("Untitled - Arta");
-                    //autoit.WinMenuSelectItem("Untitled - Arta", "", "&Analysis", "Single-gated smoothed Frequency response / Spectrum"); //Frequecy Response
-                    //autoit.WinWait("Smoothed frequency response (Untitled)", "Custom1", 5);
+                    autoit.WinMenuSelectItem("Untitled - Arta", "", "&Setup", "&Audio devices");
+                    
+
+                    autoit.Sleep(1000 * 1);
+                    autoit.WinSetState("Untitled - Arta", "", 8);
+                    autoit.WinWaitActive("Untitled - Arta");
                     autoit.Send("!r");
                     autoit.Send("{enter}");
                     autoit.WinWaitActive("Impulse response measurement / Signal recording");
@@ -221,19 +217,32 @@ namespace Comms
 
                     autoit.WinSetState("Untitled - Limp", "", 8);
                     //autoit.Sleep(1000 * 3);
+                    autoit.WinWaitActive("Untitled - Limp");
+                    autoit.WinMenuSelectItem("Untitled - Limp", "", "&Setup", "&Audio devices");
+                    
+                    autoit.WinWaitActive("Soundcard Setup");
+                    autoit.WinWaitClose("Soundcard Setup");
+
 
                     if (drop2.SelectedIndex == 2)
                     {
+                        autoit.WinWaitActive("Untitled - Limp");
                         autoit.WinMenuSelectItem("Untitled - Limp", "", "&Record", "&Calibrate");
                         autoit.WinWaitActive("Calibrate Input Channels");
                     }
-                    else
+                    else if(drop2.SelectedIndex == 1)
+                    {
+                        autoit.WinWaitActive("Untitled - Limp");
                         autoit.WinMenuSelectItem("Untitled - Limp", "", "&Setup", "&Generator");
                         autoit.WinWaitActive("Generator Setup");
                         autoit.WinWaitClose("Generator Setup");
                         autoit.WinMenuSelectItem("Untitled - Limp", "", "&Setup", "&Measurement");
                         autoit.WinWaitActive("Measurement Setup");
                         autoit.WinWaitClose("Measurement Setup");
+                    }
+
+                   
+                       
                     
                    
                     
@@ -317,6 +326,7 @@ namespace Comms
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                         if (csv.Checked)
@@ -324,14 +334,15 @@ namespace Comms
                             autoit.Send("!f");
                             autoit.Send("e");
                             autoit.Send("c");
-                            autoit.Sleep(150);
+                            autoit.Sleep(300);
                             autoit.Send(prefix.Text + step + ".csv");
-                            autoit.Sleep(150);
+                            autoit.Sleep(300);
                             autoit.Send("{ENTER}");
                             autoit.Sleep(300);
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                         if (ascii.Checked)
@@ -339,14 +350,15 @@ namespace Comms
                             autoit.Send("!f");
                             autoit.Send("e");
                             autoit.Send("a");
-                            autoit.Sleep(150);
+                            autoit.Sleep(300);
                             autoit.Send(prefix.Text + step + ".txt");
-                            autoit.Sleep(150);
+                            autoit.Sleep(300);
                             autoit.Send("{ENTER}");
                             autoit.Sleep(300);
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                         if (pir.Checked)
@@ -360,6 +372,7 @@ namespace Comms
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                     }
@@ -372,6 +385,7 @@ namespace Comms
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                         if (csv.Checked)
@@ -387,6 +401,7 @@ namespace Comms
                             if(WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
 
                         }
@@ -403,6 +418,7 @@ namespace Comms
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                         if (pir.Checked)
@@ -416,6 +432,7 @@ namespace Comms
                             if (WinExists())
                             {
                                 autoit.WinWaitActive("Save As");
+                                autoit.Sleep(1000 * 2);
                             }
                         }
                     }
@@ -431,9 +448,10 @@ namespace Comms
                 MessageBox.Show("You can only run one macro");
                 this.Close();
             }
-            this.Close();
+            
             Arta.Kill();
             Arta.Dispose();
+            this.Show();
 
         }
 
@@ -456,6 +474,7 @@ namespace Comms
                  trials.Text = readText[4];
                  drop1.SelectedItem = readText[5];
                  drop2.SelectedItem = readText[6];
+                 wait_measure.Text = readText[7];
 
             }
         }
@@ -480,7 +499,7 @@ namespace Comms
             if ((drop2.SelectedItem != null) && ((string)drop1.SelectedItem != null))
             {
                 Mode_Channel = "CH" + (string)drop1.SelectedItem + "_" + Channel;
-                MessageBox.Show(Mode_Channel);
+                //MessageBox.Show(Mode_Channel);
             }
             else
                 MessageBox.Show("Please enter both values");
@@ -514,10 +533,28 @@ namespace Comms
             PingCom("verify");
         }
 
-        
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
 
-
-       
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Text Files | *.txt| Config file | *.ini";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string[] config = new string[8];
+                config[0] = path.Text;
+                config[1] = wait.Text;
+                config[2] = prefix.Text;
+                config[3] = suffix.Text;
+                config[4] = trials.Text;
+                config[5] = (string)drop1.SelectedItem;
+                config[6] = (string)drop2.SelectedItem;
+                config[7] = wait_measure.Text ;
+                string filename = System.IO.Path.GetFullPath(saveFileDialog1.FileName);
+                System.IO.File.WriteAllLines(filename, config); //Write to Config files
+            }
+           
+        }
     }
 }
