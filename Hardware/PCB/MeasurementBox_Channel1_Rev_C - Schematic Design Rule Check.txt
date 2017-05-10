@@ -1,0 +1,25 @@
+Design Rule Check Report
+------------------------
+
+Report File    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C - Schematic Design Rule Check.txt
+Report Written : Wednesday, April 19, 2017
+
+
+C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C.sch
+=========================================================================================
+
+Error : Bridged component R6 at (1850,37930)
+Error : Net 'Digital01' is empty
+Error : Net 'Signal05' is empty
+Error : Net 'Signal06' is empty
+Error : Net 'Signal08' is empty
+Error : Net 'Signal09' is empty
+Error : Net 'Signal10' is empty
+Error : Net 'Digital00' is empty
+Error : Net 'Signal04' is empty
+
+Design Rule Check found 9 errors
+================================
+
+
+End Of Report.

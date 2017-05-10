@@ -1,0 +1,161 @@
+Update Components Report
+------------------------
+
+Report File    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Rev_A (SCH - Update Components Report).txt
+Report Written : Tuesday, December 06, 2016
+Project Path   : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Rev_A.prj
+Design Path    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Rev_A.sch
+Design Title   : 
+Created        : 
+Last Saved     : 12/6/2016 9:45:59 PM
+Editing Time   : 753 min
+Units          : thou (precision 0)
+
+
+Library Files:
+==============
+
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM (Andrew DeMedeiros's conflicted copy 2014-01-22).cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_AD.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_AMPLIFIER.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_CAPACITOR.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_COMPARATOR.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_CRYSTAL.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_DC-DC.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_DIODE.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_IC (Andrew DeMedeiros's conflicted copy 2014-01-21).cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_IC.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_INDUCTOR.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_LOGIC.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_NI.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_OPTOELECTRONIC.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_OP_AMP.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_RELAY.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_TESTPOINT.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\Schema.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\WIRING_DIAGRAM.cml
+C:\Users\Public\Documents\Easy-PC\Library\74hc.cml
+C:\Users\Public\Documents\Easy-PC\Library\74hct.cml
+C:\Users\Public\Documents\Easy-PC\Library\74ls.cml
+C:\Users\Public\Documents\Easy-PC\Library\4000.cml
+C:\Users\Public\Documents\Easy-PC\Library\Connector.cml
+C:\Users\Public\Documents\Easy-PC\Library\Csm.cml
+C:\Users\Public\Documents\Easy-PC\Library\Discrete.cml
+C:\Users\Public\Documents\Easy-PC\Library\Dsm.cml
+C:\Users\Public\Documents\Easy-PC\Library\Hybrid.cml
+C:\Users\Public\Documents\Easy-PC\Library\Opamps.cml
+C:\Users\Public\Documents\Easy-PC\Library\Pcb.cml
+C:\Users\Public\Documents\Easy-PC\Library\Qbsm.cml
+C:\Users\Public\Documents\Easy-PC\Library\Qcsm.cml
+C:\Users\Public\Documents\Easy-PC\Library\Qsm.cml
+C:\Users\Public\Documents\Easy-PC\Library\relay.cml
+C:\Users\Public\Documents\Easy-PC\Library\Schema.cml
+C:\Users\Public\Documents\Easy-PC\Library\Sm.cml
+C:\Users\Public\Documents\Easy-PC\Library\Transistor.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_CONNECTOR (Andrew DeMedeiros's conflicted copy 2011-12-09).cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_HARNESS.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_LED.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_RESISTOR.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_SENSOR.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_DOCUMENTATION.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_ITA_SPECIFIC.cml
+C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_PROJECT_SPECIFIC.cml
+
+Selected items to be updated:
+=============================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+    (None) 
+
+Additional items to be updated:
+===============================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+    (None) 
+
+Selected items not to be updated  (Same version as library)
+===========================================================
+
+
+Components:
+===========
+
+3POS_SOLDER_TO_BOARD  C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\COMPONENTS\E-MECH_CUSTOM_CONNECTOR (Andrew DeMedeiros's conflicted copy 2011-12-09).cml
+ATMEGA328P            C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_IC (Andrew DeMedeiros's conflicted copy 2014-01-21).cml
+DS1E-M-DC24V          C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_RELAY.cml
+FROM                  C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\Schema.cml
+G5V-2                 C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM_RELAY.cml
+GND                   C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\Schema.cml
+R                     C:\Users\Public\Documents\Easy-PC\Library\Discrete.cml
+TO                    C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\Schema.cml
+ZENER                 C:\Users\Public\Documents\Easy-PC\Library\Discrete.cml
+
+Symbols:
+========
+
+28P_MCU       C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM (Andrew DeMedeiros's conflicted copy 2014-01-21).ssl
+CONN_3        C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Schematic Symbols\E-MECH_CUSTOM_CONNECTOR.ssl
+FROM          C:\Users\Public\Documents\Easy-PC\Library\Discrete.ssl
+GND           C:\Users\Public\Documents\Easy-PC\Library\Discrete.ssl
+R             C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM (Andrew DeMedeiros's conflicted copy 2014-01-21).ssl
+RELAY_DPDT    C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM (Andrew DeMedeiros's conflicted copy 2014-01-21).ssl
+RELAY_SPDT_1  C:\Users\ADAM\Dropbox\Electromechanica\Easy-PC\Library\E-MECH_CUSTOM (Andrew DeMedeiros's conflicted copy 2014-01-21).ssl
+TO            C:\Users\Public\Documents\Easy-PC\Library\Discrete.ssl
+ZENERD        C:\Users\Public\Documents\Easy-PC\Library\Discrete.ssl
+
+
+
+Update Components Summary
+=========================
+
+Updating all components.
+Update component values
+Update component value positions
+
+	Selected for update:			   9  Components
+						   9  Symbols
+
+	Selected items to be updated:		   0  Components
+						   0  Symbols
+
+	Additional items to be updated:		   0  Components
+						   0  Symbols
+
+	Selected items NOT to be updated:	   9  Components
+	  (Same version as library)		   9  Symbols
+
+Updating all components.
+Update component values
+Update component value positions
+
+	Selected for update:			   9  Components
+						   9  Symbols
+
+	Selected items to be updated:		   0  Components
+						   0  Symbols
+
+	Additional items to be updated:		   0  Components
+						   0  Symbols
+
+	Selected items NOT to be updated:	   9  Components
+	  (Same version as library)		   9  Symbols
+
+
+End Of Report.

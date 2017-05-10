@@ -1,0 +1,14 @@
+Transfer from Schematic to PCB.
+-------------------------------
+
+Report File    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C (Transfer from Schematic to PCB.).txt
+Report Written : Thursday, April 20, 2017
+Design Path    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C.pcb
+Design Title   : 
+Created        : 4/20/2017 1:34:03 AM
+Last Saved     : 
+Editing Time   : 0 min
+Units          : thou (precision 0)
+
+
+End Of Report.

@@ -1,0 +1,7 @@
+All .sch and .pcb files are created using Easy-PC version 17.
+
+Custom component libraries were created. Information on these components can be provided by request via email.
+
+Adam
+axb1993@gmail.com
+4/30/17

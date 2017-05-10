@@ -1,0 +1,14 @@
+Pour Copper Report
+------------------
+
+Report File    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C (PCB - Pour Copper Report).txt
+Report Written : Sunday, April 23, 2017
+Design Path    : C:\Users\Public\Documents\Easy-PC\Senior Design Project\MeasurementBox_Channel1_Rev_C.pcb
+Design Title   : 
+Created        : 4/19/2017 4:24:52 PM
+Last Saved     : 4/23/2017 11:36:15 AM
+Editing Time   : 4299 min
+Units          : thou (precision 0)
+
+
+End Of Report.
