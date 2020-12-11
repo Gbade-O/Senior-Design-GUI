@@ -1,0 +1,2 @@
+# Senior-Design
+This repository contains Hardware and Software implementations of my Senior Design group project. The goal was to create a GUI and external custom made electronic black box , that could interface with ARTA audio measurement and analysis software . ARTA can only perform measurements on one UUT at a time , the GUI and blackbox allowed us to expand this capability to 8 UUTs at a time. 
